@@ -4,10 +4,10 @@ status = "";
 
 
 function setup() {
-  canvas = createCanvas(380, 380);
+  canvas = createCanvas(450, 380);
   canvas.center();
   video = createCapture(VIDEO);
-  video.size(380,380);
+  video.size(450,380);
   video.hide();
 }
 
@@ -32,7 +32,7 @@ function gotResult(error, results) {
 }
 
 function draw() {
-  image(video, 0, 0, 380, 380);
+  image(video, 0, 0, 450, 380);
       if(status != "")
       {
         objectDetector.detect(video, gotResult);
